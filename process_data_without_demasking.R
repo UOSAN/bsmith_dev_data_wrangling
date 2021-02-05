@@ -2,7 +2,7 @@
 library(dplyr)
 
 #load the survey
-load("../../data/scored_data.RData")
+load("~/Dropbox (University of Oregon)/UO-SAN Lab/Berkman Lab/Devaluation/analysis_files/data/scored_data.RData")
 
 #convert scored to numeric
 
@@ -18,4 +18,4 @@ source('get_participants.R')
 scored <- merge(scored,subid_devid_key,by.x="SID",by.y="dev_id")
 scored$SID <- NULL
 
-save(scored,ppt_list_clean,file="../../data/scored_data_coded.RData")
+save(scored,ppt_list_clean,file="~/Dropbox (University of Oregon)/UO-SAN Lab/Berkman Lab/Devaluation/analysis_files/data/scored_data_coded.RData")

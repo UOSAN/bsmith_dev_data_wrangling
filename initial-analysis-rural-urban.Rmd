@@ -6,7 +6,7 @@ output: html_notebook
 ```{r}
 cwd<-getwd()
 
-setwd("../../data/")
+setwd("~/Dropbox (University of Oregon)/UO-SAN Lab/Berkman Lab/Devaluation/analysis_files/data/")
 
 source("DEV2-RuralVsUrbanDataExam_R_2021-01-21_2323.r")
 
@@ -82,7 +82,7 @@ Let's take a look at the different county codes on offer.
 ```{r}
 library(readxl)
 
-rucc2013<-readxl::read_xls("../../data/ruralurbancodes2013.xls",sheet="Rural-urban Continuum Code 2013")
+rucc2013<-readxl::read_xls("~/Dropbox (University of Oregon)/UO-SAN Lab/Berkman Lab/Devaluation/analysis_files/data/ruralurbancodes2013.xls",sheet="Rural-urban Continuum Code 2013")
 
 rucc2013_codes_list <- rucc2013 %>% select(RUCC_2013,Description) %>% arrange(. , RUCC_2013) %>% unique
 rucc2013_codes_list
@@ -107,6 +107,6 @@ table(ppt_list_with_rucc$RUCC_2013)
 ```
 
 ```{r}
-save(ppt_list_with_rucc,file="../../ppt_list_with_rucc.RData")
+save(ppt_list_with_rucc,file="~/Dropbox (University of Oregon)/UO-SAN Lab/Berkman Lab/Devaluation/analysis_files/data/ppt_list_with_rucc.RData")
 ```
 

@@ -3,7 +3,7 @@
 
 cwd<-getwd()
 
-setwd("../../data/")
+setwd("~/Dropbox (University of Oregon)/UO-SAN Lab/Berkman Lab/Devaluation/analysis_files/data/")
 
 source("DEV2-PostpreOutcomesChang_R_2021-01-23_0025.r")
 
